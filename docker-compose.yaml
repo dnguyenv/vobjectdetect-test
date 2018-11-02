@@ -1,0 +1,19 @@
+version: '2'
+services:
+  testapp:
+    image: dnguyenv/vobjectdetecttest:latest
+    container_name: testapp
+    environment:
+      - REDIS_HOST=redis
+      - TEST_SERVERS=[{"name":"ICP Intel","url":"https://192.168.103.37/vrtc-intel/image"},{"name":"ICP Power","url":"https://192.168.103.37/vrtc-power/image"},{"name":"IBM Cloud Public","url":"https://mec-poc.us-south.containers.appdomain.cloud/image"}]
+    links:
+      - redis
+    ports:
+      - "3000:3000"
+  redis:
+    image: redis
+    container_name: redis
+    command: redis-server --requirepass p@55w0rd~4y0u1n0w#
+#    ports:
+#      - "6379:6379"
+  

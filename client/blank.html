@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+      <title>Flockface</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+</head>
+
+<body style="overflow:hidden;">
+<textarea readonly="readonly" rows="10" cols="20" id="content" style="margin-top:5px;width:10%;border:1px solid graylight;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;outline: none !important;"></textarea>
+<script>
+(function query() {
+  var cont = document.getElementById('content');
+  cont.style.height = (window.innerHeight-30) + 'px';
+  cont.style.width = (window.innerWidth-20) + 'px';
+    //var pairs = location.search.slice(1).split('&');
+    var data = location.hash.substring(1);
+     var it = decodeURIComponent(atob(data));
+     var pretty = JSON.stringify(JSON.parse(it), undefined, 4);
+     cont.innerHTML = (pretty);
+})();
+</script>
+</body>
+</html>

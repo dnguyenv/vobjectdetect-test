@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Object Detection Performance Comparision App</title>
+    <base href="/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/lib/jquery-1.12.3.min.js"></script>
+    <script src="assets/lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="assets/lib/socket.io.js"></script>
+
+    <script src="assets/lib/sub_pub.js"></script>
+
+    <script src="assets/js/sk-performance.js"></script>
+    <script src="assets/js/sk-topics.js"></script>
+    <script src="assets/js/sk-connect.js"></script>
+    <script src="assets/js/sk-manager.js"></script>
+
+    <script type="text/javascript" src="//www.gstatic.com/charts/loader.js"></script>
+    <script src="assets/js/g-chart.js"></script>
+    <style>
+        .container-fluid div label {
+            min-width: 150px;
+        }
+        
+        .container-fluid div input {
+            min-width: 250px;
+        }
+        
+        .stats-block {
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid lightblue;
+        }
+        
+        #sockerServer {
+            font-size: 16px;
+        }
+        
+        #socketId {
+            font-size: 12px;
+        }
+        
+        #results span {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="height:auto;width:100%;">
+    <div class="container-fluid">
+
+        <h3>Object Detection Performance Comparision App
+            <!--span id="sockerServer"></span> <span id="socketId"></span--></h3>
+
+        <h3>Statistics</h3>
+
+        <div id="statistics"></div>
+
+        <hr style="clear:both;" />
+        <h3>Charts</h3>
+        <div id="gcharts">
+            <div id="mychart"></div>
+        </div>
+
+        <hr style="clear:both;" />
+
+        <!--h3>Running-Logs</h3-->
+        <!--div id="results"></div-->
+
+    </div>
+
+
+</body>
+
+</html>

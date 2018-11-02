@@ -1,0 +1,515 @@
+/**
+*
+* @author: Viet Nghiem
+*
+*/
+body {
+  padding: 10px 20px 20px;
+  font: 14px;
+  font-family: 'Century Gothic', 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+ .row.content {height: auto;min-height:680px;}
+ 
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+   margin-bottom: 0;
+   border-radius: 0;
+ }
+ /* Set gray background color and 100% height */
+ .sidenav {
+   background-color: #f1f1f1;
+   height: 100%;
+ }
+ 
+ /* Set black background color, white text and some padding */
+ .footer {
+   background-color: #555;
+   color: white;
+   padding: 15px;
+ }
+ 
+ .login-form {
+  margin: auto;
+  text-align:center;
+  max-width: 480px;
+}
+.app-image {
+  height: 200px;
+    margin: 50px auto auto;
+    width: 440px;
+}
+.app-logo {
+  background-color: transparent;
+    background-image: url("../img/App-Icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form form {
+  text-align: left;
+}
+
+.body-form {
+  margin: auto;
+  text-align:center;
+  max-width: auto;
+}
+
+.body-content {
+  text-align:left;
+}
+
+.modal-dialog .modal-title, .modal-dialog .title {
+  color: #064588;
+  font-weight: bold;
+}
+
+.modal-dialog label, .modal-dialog input, .modal-dialog textarea {
+  color: #064588;
+  font-weight: normal;
+}
+
+.user-profile {
+  float:right;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.user-info {
+  padding: 10px;
+}
+.user-info strong {
+  padding-left: 10px;
+}
+
+.user-profile .btn-sign-out {
+  background-color: transparent;
+    border-color: #ccc;
+    color: #CFD0D1;;
+}
+
+.select-box {
+  float:left;
+}
+
+.select-box-arrow {
+  float:left;
+  margin:110px 10px 0;
+}
+
+.select-box select {
+  max-width:360px;
+  min-width:360px;
+  min-height: 200px;
+}
+
+.select-box select option {
+  line-height: 24px;
+  height: 24px;
+}
+.modal-dialog-ext {
+  width:800px;  
+}
+.modal-series {
+  min-width:900px;width:80%;
+} 
+
+.text-gray .poll-title {
+  color:gray;
+}
+
+.table { border-collapse: separate;}
+.table > thead > tr:first-child > th:first-child { border-top-left-radius: 5px; }
+.table > thead > tr:first-child > th:last-child { border-top-right-radius: 5px; }
+.table > tbody > tr:last-child > td:first-child { border-bottom-left-radius: 5px; }
+.table > tbody > tr:last-child > td:last-child { border-bottom-right-radius: 5px; }
+
+.table > thead > tr > th {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+
+.table-striped2 > tbody > tr:nth-of-type(2n) > td {
+    background-color: #ffffff;
+}
+
+.table-striped2 > tbody > tr:nth-of-type(2n+1) > td {
+    background-color: #f9f9f9;
+}
+
+.table-striped2 .action {
+  width: 8%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.required {
+  color: #D9182D; 
+}
+
+.modal-dialog {
+  min-width: 300px;
+}
+
+.modal-dialog .modal-footer {
+    position: relative;
+}
+
+.modal-dialog .modal-footer .loading-icon{
+  position: absolute;
+  right: 50%;
+  top: 20px;
+  color: #286090;
+  font-size: 25px;
+}
+
+.modal-dialog .btn.btn-text-white{
+  color: #FFFFFF;
+}
+
+.model-confirm-dialog .modal-dialog {
+    width: 40%;
+    padding-top: 10%;
+}
+
+.gly-indicator {
+  animation: indicator 2s infinite linear;
+}
+@keyframes indicator { 
+  0% {
+  transform: rotate(0deg);
+  } 
+  100% {
+  transform: rotate(359deg);
+  }
+}
+
+.gray-dotted {
+  border:none;
+  border-bottom: 1px dotted gray;
+}
+.user-profile label {
+  min-width: 120px;
+}
+
+.required-field {
+  color:red;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+ @media screen and (max-width: 767px) {
+   .sidenav {
+     height: auto;
+     padding: 15px;
+   }
+   .row.content {height: auto;} 
+}
+
+.asterisk {
+  color: red;
+  font-size: 12pt;
+}
+.typeahead-results {
+  z-index:10000;
+}
+.faces-typeahead-results .result {
+  height: 68px;
+}
+.modal-dialog {
+  min-width: 300px;
+}
+
+.modal-dialog .modal-footer {
+    position: relative;
+}
+
+.modal-dialog .modal-footer .loading-icon{
+  position: absolute;
+  right: 50%;
+  top: 20px;
+  color: #286090;
+  font-size: 25px;
+}
+
+.modal-dialog .btn.btn-text-white{
+  color: #FFFFFF;
+}
+
+.model-confirm-dialog .modal-dialog {
+    width: 40%;
+    padding-top: 10%;
+}
+.modal-dialog .modal-title, .modal-dialog .title {
+  color: #064588;
+  font-weight: bold;
+}
+
+.modal-dialog label, .modal-dialog input, .modal-dialog textarea {
+  color: #064588;
+  font-weight: normal;
+}
+.delegate .id {
+  font-weight:bold;
+}
+.delegate .email {
+  color:#409BDC;
+}
+.delegate .remove-btn {
+  color: red;
+  opacity: 1;
+}
+.even {
+  background-color:#FFFFFF;
+}
+.odd {
+  background-color:#F0F0F0;
+}
+.error {
+  color: red;
+}
+.modal-header .close{
+  font-size: 32px;
+}
+#bizDelegate.form-control.input-sm {
+  height: 34px;
+}
+.reg-app-btn {
+float:right;
+margin-bottom: 10px;
+    margin-top: -15px;
+}
+.only-text {
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #c3c3c3;
+    background-color: #eeeeee;
+    padding: 6px;
+    border-radius: 3px;
+}
+#loadingModal .modal-dialog {
+ max-width: 300px;
+ min-width: 300px;
+}
+.loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  height: 60px;
+  margin: auto;
+  width: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.myapp-icon {
+width:80px;
+height:80px;
+border: 1px solid #eee;
+}
+
+.screenshots-container {
+min-width: 723px;
+width:auto;
+height:290px;
+border:1px solid gray;
+background:gray;
+}
+.screenshots {
+  background: rgba(0, 0, 0, 0) none repeat;
+}
+.screenshots .wrapper {
+    background: #eee none repeat scroll 0 0;
+    border: 2px solid #e5e5e5;
+    display: inline-block;
+    margin: 10px 0 10px 5px;
+    position: relative;
+    text-align: center;
+    width: 174px;
+    height: 270px;
+    float:left;
+}
+.screenshots .wrapper .preview {
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.screenshots .wrapper .preview img {
+    height: 100%;
+    left: 0;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.screenshots .wrapper .add-file {
+    cursor: pointer;
+    display: block;
+    line-height: 270px;
+}
+.screenshots .wrapper .preview .controls {
+    background: #7c7f89 none repeat scroll 0 0;
+    bottom: 0;
+    height: 35px;
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+}
+.controls .prev-btn, .controls .next-btn, .controls .del-btn {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll center center;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.controls .next-btn {
+    margin-left: 30px;
+}
+
+.controls .del-btn {
+    margin-left: 30px;
+}
+.pointer {
+cursor: pointer;
+}
+.binname {
+font-weight:normal;
+font-size: 10px;
+}
+
+.android-lock, .apple-lock {
+  background-color: transparent;
+    background-image: url("../img/apple-lock.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+}
+.android-lock {
+    background-image: url("../img/android-lock.png");
+}
+.myapp, .myapp-file {
+float: left;
+    margin: 6px;
+    padding: 6px;
+    border: 1px solid #c3c3c3;
+    border-radius: 6px;
+    min-width: 150px;
+    background-color: #f1f3f7;
+}
+.myapp .row, .myapp-file .row{
+margin-left: 0px;
+margin-right: 0px;
+}
+.myapp .icon-contain {
+margin:auto;
+text-align: center;
+}
+.myapp .myapp-icon {
+margin-left:0;
+margin-right:0;
+}
+.myapp-mng{
+}
+.myapp-mng .myapp-icon {
+width:50px;
+height:50px;
+}
+.myapp-mng .android-lock, .myapp-mng .apple-lock {
+width:30px;
+height:30px;
+}
+
+.container-fluid div label {
+      min-width: 150px;
+    }
+
+    .container-fluid div input {
+      min-width: 250px;
+    }
+
+    .m-table {
+      display: table;
+      width: auto;
+      background-color: #fff;
+      border: 1px solid graylight;
+      border-spacing: 3px;
+      /* cellspacing:poor IE support for  this */
+    }
+
+    .m-table>div,
+    .m-table .row {
+      display: table-row;
+      width: auto;
+      clear: both;
+    }
+
+    .m-table>div>div,
+    .m-table .col {
+      float: left;
+      /* fix for  buggy browsers */
+      display: table-column;
+      min-width: 60px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+
+    .head,
+    .head>div {
+      font-weight: bold;
+    }
+
+    .even {
+      background-color: #fff;
+    }
+
+    .odd {
+      background-color: graylight;
+    }
+
+    .date {
+      width: 200px;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+
+    .chart {
+      width: 100%;
+      min-height: 300px;
+      position: relative;
+      margin-top: 2rem;
+      border: 1px solid darkgray;
+    padding: 10px;
+    }
+
+    .control-label {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+.small-gray {
+  font-size:12px;
+  color:gray;
+}
